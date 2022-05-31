@@ -158,7 +158,7 @@ git branch -m {{古いブランチ名}} {{新しいブランチ名}}
 ブランチ削除
 
 ```text
-git branch -d {{branch name}}
+git branch -D {{branch name}}
 ```
 
 ローカルブランチをリモートに反映
@@ -202,3 +202,10 @@ git merge {{branch name}}
 ```text
 git rebase {{branch name}}
 ```
+
+マージしようとすると`refusing to merge unrelated histories`エラーが出たときつけるオプション
+
+```text
+--allow-unrelated-histories
+```
+
