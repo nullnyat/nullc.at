@@ -1,0 +1,17 @@
+{
+  "name": "nullc.at",
+  "short_name": "nullc.at",
+  "theme_color": "#96CCE7",
+  "background_color": "#13141C",
+  "display": "standalone",
+  "Scope": "https://nullc.at",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "/pwa.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}

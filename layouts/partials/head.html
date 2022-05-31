@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Params.Description }}{{ end }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ (resources.Get "sass/main.sass" | toCSS | minify).RelPermalink }}">
+<title>{{ if not .IsHome }}{{ .Title }} / {{ end }}{{ .Site.Title }}</title>
+<script src="{{ (resources.Get "scripts/theme.js" | minify).RelPermalink }}"></script>
+
+<!--pwa-->
+<link rel="manifest" href="{{ (resources.Get "manifest.json").RelPermalink }}">
+<meta name="theme-color" content="#96cce7">
+
+<!--favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#96cce7">
+<meta name="msapplication-TileColor" content="#96cce7">
+
+<!-- Open Graph Protocol -->
+<meta property="og:title" content="nullc.at" />
+<meta property="og:description" content="{{ if not .IsHome }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+<meta property="og:url" content="https://nullc.at" />
+<meta property="og:image" content="https://s3.nca10.net/misskey/5dd25950-5639-4de8-96d8-c67ded05fab8.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:site" content="@nullnyat" />
+<meta name="twitter:creator" content="@nullnyat" />
+<meta name="twitter:card" content="summary" />

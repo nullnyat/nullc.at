@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class='index__container'>
+
+    <div class='index__item div1'>
+        <h2>memolog</h2>
+        <ul>
+            {{ range first 7 (.Site.GetPage "memo").Pages }}
+            <li><a href='{{ .Permalink }}'>{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+
+    </div>
+
+    <div class='index__item div2'>
+        <h2>banner</h2>
+        <div class='index__banner'>
+            <a href='https://nullc.at'><img src='/images/nullcat-header.png' alt='nullc.at-banner'></a>
+            <a href='https://yude.jp'><img src="https://yude.jp/images/banner_new.png" alt="yude-banner"></a>
+            <a href='http://mwxdxx.ml/'><img src='/images/mwxdxx.png' alt='mwxdxx-banner'></a>
+            <a href='https://home.ilnk.info/'><img src='https://shiotan.ilnk.info/imgfile/homeilnkinfo-banner.gif' alt='morotesovtannu-banner'></a>
+        </div>
+    </div>
+
+    <div class='index__item div3'>
+        <h2>My Repositories</h2>
+        <div id="github-repos"></div>
+    </div>
+
+</div>
+<script src="{{ (resources.Get "scripts/github.js" | minify).RelPermalink }}"></script>
+{{ end }}

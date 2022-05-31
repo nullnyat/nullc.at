@@ -1,0 +1,9 @@
+{{ define "main" }}
+<article>
+    <h1 class='article__title'>{{ .Title }}</h1>
+    <div class='article__container'>{{ .Content }}</div>
+    <img class='article__top-button article__top-button--disabled' src='/images/neko.png' alt='Neko'>
+</article>
+
+<script src="{{ (resources.Get "scripts/top-button.js" | minify).RelPermalink }}"></script>
+{{ end }}

@@ -1,0 +1,54 @@
+.main__header
+  margin-bottom: 64px
+
+  &__top
+    width: 100%
+    height: 64px
+    padding-block: 16px
+    padding-inline: 32px
+    background: url("/images/header.png")
+
+  &__logo
+    img
+      height: 100%
+
+  &__functions
+    float: right
+    border: none
+    background-color: transparent
+    background-size: 32px
+    width: 32px
+    height: 32px
+
+    &--dark
+      background-image: url("/images/lightmode.svg")
+
+    &--light
+      background-image: url("/images/darkmode.svg")
+
+  &__menu
+    width: 100%
+    background-color: var(--background-color)
+
+    ul
+      list-style: none
+      display: flex
+      flex-direction: row
+      gap: 16px
+      padding-left: 32px
+      padding-block: 8px
+      margin: 0
+
+    li
+      font-size: 16px
+
+@media screen and (max-width: 768px)
+  .main__header
+    margin-bottom: 0
+
+    &__menu
+      display: flex
+      justify-content: center
+
+      ul
+        padding-left: 0

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang='ja'>
+    <head>{{ partial "head.html" . }}</head>
+    <body>
+        <div class='main__wrapper'>
+            {{ partial "header.html" . }}
+
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
+        </div>
+        <script>
+            if('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('sw.js')
+            }
+        </script>
+    </body>
+</html>

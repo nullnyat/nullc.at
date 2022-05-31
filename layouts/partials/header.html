@@ -1,0 +1,36 @@
+<header class='main__header'>
+    <div class='main__header__top'>
+        <a class='main__header__logo' href='/'><img src='/images/logo.png' alt='logo'></a>
+        <button class='main__header__functions main__header__functions--light' onclick='toggle()' alt='theme-button'/>
+    </div>
+
+    <nav class='main__header__menu'>
+        <ul>
+            <li><a href='/'>Home</a></li>
+            <li><a href='/about/'>About</a></li>
+            <li><a href='/links/'>Links</a></li>
+            <li><a href='/memo/'>Memo</a></li>
+            <li><a href='/products/'>Products</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    function toggle() {
+        switch (localStorage.getItem('theme')) {
+            case 'dark':
+                localStorage.setItem('theme', 'light')
+                break
+
+            case 'light':
+                localStorage.setItem('theme', 'dark')
+                break
+            }
+
+        if (location.pathname === '/') {
+             location.reload()
+        } else {
+            updateDOM()
+        }
+    }
+</script>

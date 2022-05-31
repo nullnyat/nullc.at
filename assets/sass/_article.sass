@@ -1,0 +1,28 @@
+.article__container
+  background-color: var(--background-color)
+  padding: 32px
+  min-height: 768px
+
+  @import 'article-content'
+
+.article__top-button
+  position: fixed
+  bottom: 32px
+  right: 32px
+  width: 128px
+  opacity: 100
+  transition: opacity 250ms, transform 250ms
+
+  &:hover
+    transform: translateY(-16px)
+
+  &--disabled
+    opacity: 0
+
+@media screen and (max-width: 768px)
+  .article__title
+    text-align: center
+    margin-block: 48px
+
+  .article__top-button
+    width: 96px

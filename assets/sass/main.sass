@@ -1,0 +1,37 @@
+@import "header"
+@import "index"
+@import "article"
+
+*
+  font-family: 'DotGothic16', sans-serif
+  box-sizing: border-box
+
+a
+  color: var(--text-color)
+
+body
+  margin: 0
+  height: 100vh
+  color: var(--text-color)
+
+  @media (prefers-color-scheme: dark)
+    background-color: #181924
+
+  @media (prefers-color-scheme: light)
+    background-color: white
+
+.body--dark
+  background: url("/images/d-bg.png")
+  --text-color: #D5EEFF
+  --background-color: #181924
+
+
+.body--light
+  background: url("/images/bg.png")
+  --text-color: #707070
+  --background-color: white
+
+.main__wrapper
+  margin: auto
+  max-width: 768px
+  height: 100%
