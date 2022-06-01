@@ -7,3 +7,4 @@ draft: false
 - [NullcatChan!](/chan/)
 - [NullcatChan! on Misskey](/chan-on-misskey/)
 - [nca10.net](/nca10.net/)
+- [ncat-lang](/ncat-lang/)
