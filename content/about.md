@@ -27,13 +27,15 @@ draft: false
 
 イラスト: 2020/07/08から描き始めました。デフォルメ系のイラストがちょっとだけ描けます。
 
+ツール: Illustrator, Clip Studio, Photoshop, STUDIO, Canva (全部ちょっとずつだけ使えます)
+
 # 所属
 Ablaze: イラストを担当しています。公式キャラクターのくーれちゃんを産みました。サイトの404ページなどのイラストを最近は描きました。
 
 # 環境
 OS: macOS Monterey, MIUI13, Windows11, ArchLinux
 
-IDE: IntelliJ
+IDE: WebStorm
 
 Shell: fish, Pwsh7 
 
