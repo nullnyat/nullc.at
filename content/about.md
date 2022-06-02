@@ -22,13 +22,24 @@ draft: false
 
 曲を聞くこと
 
+# スキル
+プログラミング: 2021/08/30から学び始めました。HTMLとSASS(sass記法)とSvelteがちょっとだけできます。最近はReactとAngularを勉強してます。
+
+イラスト: 2020/07/08から描き始めました。デフォルメ系のイラストがちょっとだけ描けます。
+
+# 所属
+Ablaze: イラストを担当しています。公式キャラクターのくーれちゃんを産みました。サイトの404ページなどのイラストを最近は描きました。
+
 # 環境
-OS: Windows11, MIUI13, ArchLinux, Ubuntu20.04
+OS: macOS Monterey, MIUI13, Windows11, ArchLinux
 
 IDE: IntelliJ
 
-Shell: Pwsh7, fish
+Shell: fish, Pwsh7 
 
 keyboard: REALFORCE
 
 Mouse: M5750W
+
+---
+最終更新日(2022/06/03)
