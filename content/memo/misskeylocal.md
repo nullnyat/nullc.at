@@ -4,7 +4,7 @@ date: 2022-04-11T19:58:23+09:00
 draft: false
 ---
 
-1. `.config/docker-compose.yml` を下のに変更
+1. `docker-compose.yml` を下のに変更
 
 ```yaml
 version: "3"
@@ -40,7 +40,9 @@ networks:
   external_network:
 ```
 
-2. `.config/default.yml` と `.config/example.yml` を下のに変更
+2. `.config/example.yml` を `.config/default.yml` にリネーム
+
+3.  default.ymlをしたのに変更
 
 アクセスするURLと指定するURLが違うと画像が正しく表示されなくなってしまうのでここでは`https://localhost:3000`を指定する
 
@@ -64,6 +66,6 @@ redis:
 id: 'aid'
 
 ```
-
-3. `docker-compose up -d && yarn && yarn build && yarn migrate && yarn dev` で起動
-4. [http://localhost:3000](http://localhost:3000) で確認
+4. `docker_example.env` を `docker.env`にリネーム
+5. `docker-compose up -d && yarn && yarn build && yarn migrate && yarn dev` で起動
+6. [http://localhost:3000](http://localhost:3000) で確認
